@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Лабораторная работа 1 - ИТМО 5 Web-программирование</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u0440\u0430\u0431\u043e\u0442\u0430 1. \u0412\u0430\u0440\u0438\u0430\u043d\u0442 1.", url: "#_top", children: [
+              {title: "\u0412\u044b\u043f\u043e\u043b\u043d\u0438\u043b: \u041f\u0440\u043e\u0441\u043a\u0443\u0440\u044f\u043a\u043e\u0432 \u0420\u043e\u043c\u0430\u043d \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0438\u0447 K3339.", url: "#k3339" },
+              {title: "\u0417\u0430\u0434\u0430\u043d\u0438\u0435 1", url: "#1" },
+              {title: "\u0417\u0430\u0434\u0430\u043d\u0438\u0435 2", url: "#2" },
+              {title: "\u0417\u0430\u0434\u0430\u043d\u0438\u0435 3", url: "#3" },
+              {title: "\u0417\u0430\u0434\u0430\u043d\u0438\u0435 4", url: "#4" },
+              {title: "\u0417\u0430\u0434\u0430\u043d\u0438\u0435 5", url: "#5" },
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script>
+      <script src="../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href=".." class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href=".." class="btn btn-xs btn-link">
+        Добро пожаловать
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="1-1">Лабораторная работа 1. Вариант 1.</h1>
+<h3 id="k3339">Выполнил: <span style="color:#36ea1a">Проскуряков Роман Владимирович K3339</span>.</h3>
+<h2 id="1">Задание 1</h2>
+<p>Консоль приложения сервера</p>
+<p><a href=""><img src="report_photo/Task1_server.png" /></a></p>
+<p>Консоль приложения клиента</p>
+<p><a href=""><img src="report_photo/Task1_client.png" /></a></p>
+<p>Ничего особенного, просто "Hello world!" в сетевом мире.</p>
+<h2 id="2">Задание 2</h2>
+<p>В нашем варианте требуется проводить вычисления по теореме Пифагора.</p>
+<ol>
+<li>
+<p>Вычислить гипотенузу по двум катетам</p>
+<p><a href=""><img src="report_photo/Task2_client_1.png" /></a></p>
+</li>
+<li>
+<p>Вычислить катет по гипотенузе и другому катету</p>
+<p><a href=""><img src="report_photo/Task2_client_2.png" /></a></p>
+</li>
+<li>
+<p>Можно разорвать соединение, и после этого приложение клиента завершается</p>
+<p><a href=""><img src="report_photo/Task2_client_q.png" /></a></p>
+</li>
+</ol>
+<p>Консоль сервера после предыдущих запросов</p>
+<p><a href=""><img src="report_photo/Task2_server.png" /></a></p>
+<p>Сервер поддерживает параллельную обработку запросов за счёт распределения клиентов по потокам.</p>
+<p><a href=""><img src="report_photo/Task2_server_code.png" /></a></p>
+<h2 id="3">Задание 3</h2>
+<p>Запустим сервер на localhost:8080</p>
+<p>html будем брать из лежащего рядом файла "index.html". Дальше оборачиваем его в HTTP сообщение и отправляем всем новым клиентам.</p>
+<p><a href=""><img src="report_photo/Task3_server_code.png" /></a></p>
+<p>Наш сайт!</p>
+<p><a href=""><img src="report_photo/Task3_web.gif" width="600"/></a></p>
+<h2 id="4">Задание 4</h2>
+<p>Реализован многопользовательский чат. Если перед сообщением написано "Получено сообщение:", то это сообщение было получено от другого клиента. Сообщения же без комментария были напечатаны самим клиентом и отправлены всем остальным. </p>
+<p><a href=""><img src="report_photo/Task4_all.png" /></a></p>
+<p>Командой "quit" можно отсоединиться от чата и завершить программу.</p>
+<p>Чат можно бесконечно дорабатывать - отправлять вместе с сообщением от кого оно, сохранять на сервере историю чата и отправлять её новым клиентам, отображать на клиентах список текущих пользователей в сети.</p>
+<h2 id="5">Задание 5</h2>
+<p>Наш сайт!</p>
+<p><a href=""><img src="report_photo/Task5_web.gif" /></a></p>
+<p>После начальной реализации возникли две проблемы:</p>
+<ol>
+<li>
+<p>POST запрос делился на 2, в одном весь заголовок, во втором только тело запроса. </p>
+<p>Я закостылил - если был POST запрос, но в нём не было контента, то следующий запрос воспринимать как этот контент (если конечно в нём нет заголовка). Вообще тут нужна буферизация, но я не стал с этим заморачиваться.</p>
+</li>
+<li>
+<p>После отправки формы с сайта (POST запрос), на сайте не обновлялись данные в табличке + по f5 тот же POST запрос отправлялся второй раз.</p>
+<p>Всё правильно, ведь после обработки сервером запроса нужно сделать redirect на начальную страницу. Таким образом сайт пошлёт GET запрос и получит в ответ уже обновлённую страницу. После этого f5 будет посылать тот же GET запрос вместо POST.</p>
+<p>Таким образом в ответ на POST запрос сервер отправляет "HTTP/1.1 302 Found\r\nLocation: /\r\n\r\n", что и заставляет браузер совершить redirect на путь "/"</p>
+</li>
+</ol>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav">
+      <a href=".." class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href=".." class="btn btn-xs btn-link">
+        Добро пожаловать
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="None">Windmill Dark</a> theme by None (noraj).</p>
+</footer>
+
+</body>
+</html>
