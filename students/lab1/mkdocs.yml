@@ -1,0 +1,5 @@
+site_name: ИТМО 5 Web-программирование
+
+theme:
+  name: windmill-dark
+  color_mode: auto
