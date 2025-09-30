@@ -31,5 +31,5 @@ jobs:
           restore-keys: |
             mkdocs-windmill-dark-
       - run: pip install mkdocs-windmill-dark 
-      - run: cd students\lab1
+      - run: cd students/lab1
       - run: mkdocs gh-deploy --force
