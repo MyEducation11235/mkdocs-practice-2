@@ -4,11 +4,13 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
+  # Triggers the workflow on push or pull request events but only for the "dev/Proskuryakov_Roman/..." branch
   push:
-    branches: [ "main" ]
+    branches: 
+      - 'dev/Proskuryakov_Roman/**'
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - 'dev/Proskuryakov_Roman/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,4 +34,4 @@ jobs:
             mkdocs-windmill-dark-
       - run: pip install mkdocs-windmill-dark 
       - run: mkdocs gh-deploy --force
-        working-directory: ./students/lab1
+        working-directory: students/K3339/laboratory_works/Proskuryakov_Roman
